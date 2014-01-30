@@ -1,3 +1,8 @@
+#################################################################
+#			Read file and process line by line.					#
+#			author Sergio Barbosa <sbarbosa115@gmail.com>		#
+#			version 1.0											#
+#################################################################
 cat "users.txt" | while read line; do 
 	IFS=';' read -a vars <<< "${line}"
 	DIIRECTORY=/home/${vars[0]}/
