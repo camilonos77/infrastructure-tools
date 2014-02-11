@@ -5,3 +5,4 @@
  cd /backupnew
  ls -d --sort=time */ | head -n 1 | while read line; do
         aws s3 sync $line s3://UdigBackup/WebSitesCpanel/$line
+ done
