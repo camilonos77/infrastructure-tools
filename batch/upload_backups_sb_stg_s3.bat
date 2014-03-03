@@ -4,6 +4,6 @@
 :: /        \ | \_\ \/ __ \|  | \/ \_\ (  <_> )___ \  / __ \|   ||   |/       \
 ::/_______  / |___  (____  /__|  |___  /\____/____  >(____  /___||___/______  /
 ::        \/      \/     \/          \/           \/      \/                \/ 
-::Upload result command to s3
+::Move Backups databases to AWS s3
 ::author Sergio Barbosa <sbarbosa115@gmail.com>
-C:\"Program Files"\Amazon\AWSCLI\aws.exe s3 mv G:\Files\HistoryStatistics s3://archive.publicar.com/HistoryStatistics/
+C:\"Program Files"\Amazon\AWSCLI\aws.exe s3 mv G:\Databases s3://development.publicar.com/databases-stg --recursive
