@@ -6,4 +6,4 @@
 ::        \/      \/     \/          \/           \/      \/                \/ 
 ::Upload aplicatin logs to s3
 ::author Sergio Barbosa <sbarbosa115@gmail.com>
-C:\"Program Files"\Amazon\AWSCLI\aws.exe s3 sync D:\Logs\LogsProduccion s3://development.publicar.com/databases --recursive 
+C:\"Program Files"\Amazon\AWSCLI\aws.exe s3 sync D:\Logs\LogsProduccion s3://development.publicar.com/logs/ 
